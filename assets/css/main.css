@@ -1688,8 +1688,8 @@ h6 {
   color: var(--primay-color);
 }
 .teamItem p{
-  font-weight: 400;
-  font-size: 14px;
+  font-weight: 600;
+  font-size: 18px;
   line-height: 180%;
   color: #8480C6;
   margin: 0 0 19px;
