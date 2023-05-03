@@ -21,6 +21,9 @@
 07. Product 2
 08. Product 3
 09. Product 4
+10. About Page
+11. Pricing Page
+12. Contact Page
 
 */
 /*------------------- 01. Fonts -------------------*/
@@ -259,7 +262,7 @@ h6 {
   margin-right: 0;
 }
 .mainMenu ul li a{
-  font-weight: 500;
+  font-weight: 600;
   font-size: 14px;
   line-height: 17px;
   color: #fff;
@@ -271,7 +274,7 @@ h6 {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-  min-width: 180px;
+  min-width: 300px;
   background: #FFFFFF;
   box-shadow: 0px 14px 24px rgba(1, 0, 59, 0.2);
   border-radius: 10px;
@@ -284,7 +287,6 @@ h6 {
   top: 100%;
   opacity: 1;
   visibility: visible;
-  width: 300px;
 }
 .mainMenu ul li .sub-menu li {
   display: block;
@@ -328,9 +330,9 @@ h6 {
   line-height: 17px;
   color: #fff;
 }
-.accessNav a:hover{
+/*.accessNav a:hover{
   color: var(--primay-color);
-}
+}*/
 .accessNav a.signupBtn{
   padding: 0 15px;
   min-width: 87px;
@@ -341,11 +343,11 @@ h6 {
   border-radius: 8px;
   margin-left: 16px;
 }
-.accessNav a.signupBtn:hover{
+/*.accessNav a.signupBtn:hover{
   border-color: var(--primay-color);
   color: #fff;
   background: var(--primay-color);
-}
+}*/
 .header02{
   width: 100%;
   position: fixed;
@@ -357,10 +359,10 @@ h6 {
   -o-transition: 0.3s;
   transition: 0.3s;
   background: linear-gradient(263.56deg, #5DD5F4 -37%, #2350F5 56.79%, #FF69FE 148.65%);
-  box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.25);
 }
 .header02 .logo{
-  padding: 36px 0;
+  padding: 26px 0 27px;
 }
 .header02 .logo img{
   height: 19px;
@@ -512,6 +514,7 @@ h6 {
   line-height: 170%;
   color: #FFFFFF;
   margin: 0 0 91px;
+  font-weight: 500;
 }
 .bannerBtn{
   position: relative;
@@ -549,18 +552,18 @@ h6 {
   padding: 0 22px;
   border-radius: 8px;
 }
-.bannerBtn a:hover span{
+/*.bannerBtn a:hover span{
   background: #01003b;
-}
+}*/
 .bannerBtn a:last-child{
   margin-left: 20px;
 }
 .bannerBtn a:last-child span{
   background: #01003b;
 }
-.bannerBtn a:last-child:hover span{
+/*.bannerBtn a:last-child:hover span{
   background: transparent;
-}
+}*/
 .bannerThumb{
   position: relative;
   margin-right: -30px;
@@ -673,8 +676,8 @@ h6 {
   margin: 0 0 135px;
 }
 .cmCon p{
-  font-weight: 300;
-  font-size: 24px;
+  font-weight: 400;
+  font-size: 20px;
   line-height: 170%;
   color: #fff;
   margin: 0;
@@ -743,13 +746,13 @@ h6 {
   margin-bottom: 9px;
 }
 .flCon h5{
-  font-weight: 400;
+  font-weight: 600;
   font-size: 20px;
   line-height: 160%;
   margin-bottom: 21px;
 }
 .flCon p{
-  font-weight: 300;
+  font-weight: 400;
   font-size: 20px;
   line-height: 190%;
   margin-bottom: 47px;
@@ -926,7 +929,7 @@ h6 {
   padding: 0 0 75px;
 }
 .fbr{
-  border-top: 1px solid #342F66;
+  border-top: 2px solid #342F66;
   margin-bottom: 74px;
 }
 .aboutWidget{
@@ -984,7 +987,7 @@ h6 {
   margin-left: -65px;
 }
 .copyright{
-  font-weight: 300;
+  font-weight: 500;
   font-size: 14px;
   line-height: 17px;
   color: #999;
@@ -1022,36 +1025,48 @@ h6 {
   margin: 0 0 6px;
 }
 .bannerContent02 h5{
-  font-weight: 400;
+  font-weight: 600;
   font-size: 20px;
   line-height: 160%;
   color: #fff;
   margin: 0 0 20px;
 }
 .bannerContent02 p{
-  font-weight: 300;
-  font-size: 20px;
+  font-weight: 400;
+  font-size: 18px;
   line-height: 190%;
   color: #fff;
   margin: 0 0;
 }
 .strBanerThumb{
   position: relative;
-  overflow: hidden;
-  text-align: right;
-  margin: -30px 0 0;
+  z-index: 2;
+  text-align: left;
+  margin: 237px 0 160px 11px;
+}
+.strBanerThumb img{
+  max-width: none;
+  max-height: 584px;
+}
+.strBanerThumb .shape{
+  position: absolute;
+  z-index: -1;
+  left: -225px;
+  bottom: -155px;
+  max-width: none;
+  max-height: inherit;
 }
 
 /*-- Cta Section --*/
 .ctaSection02{
   position: relative;
   background-color: #01003b;
-  padding: 0 0 117px;
+  padding: 0 0 100px;
   margin-top: -75px;
 }
 .bsbr{
   border-top: 2px solid #342F66;
-  margin-bottom: 157px;
+  margin-bottom: 130px;
 }
 .ctaprT01{
   position: relative;
@@ -1071,11 +1086,11 @@ h6 {
   margin-bottom: 12px;
 }
 .ctaprCon01 p{
-  font-weight: 300;
-  font-size: 20px;
+  font-weight: 400;
+  font-size: 18px;
   line-height: 190%;
   color: #FFFFFF;
-  margin: 0 0 77px;
+  margin-bottom: 0;
 }
 .rowGapt01{
   margin-top: 86px;
@@ -1105,14 +1120,15 @@ h6 {
 }
 .ctabcWrapper{
   position: relative;
-  margin: 162px 0 0;
+  margin: 116px 0 0;
   text-align: center;
+  border-top: 2px solid #342F66;
 }
 .ctabcWrapper p{
   font-size: 18px;
   line-height: 170%;
   color: #FFFFFF;
-  margin: 0 80px 42px;
+  margin: 101px 80px 42px;
 }
 .ctabcWrapper .bannerBtn{
   justify-content: center;
@@ -1149,7 +1165,7 @@ h6 {
   background-position: left top;
   position: relative;
   overflow: hidden;
-  padding: 205px 0 145px;
+  padding: 205px 0 130px;
 }
 .pr02heroSection .bannerContent02{
   position: relative;
@@ -1196,7 +1212,7 @@ h6 {
 /*-- Cta Section --*/
 .ctaSection03{
   position: relative;
-  padding: 0 0 120px;
+  padding: 0 0 100px;
   background: #01003B;
 }
 .ctaSection03 .bsbr{
@@ -1221,8 +1237,8 @@ h6 {
   margin-bottom: 36px;
 }
 .ctaprCon02 p{
-  font-weight: 300;
-  font-size: 20px;
+  font-weight: 400;
+  font-size: 18px;
   line-height: 190%;
   color: #FFFFFF;
   margin: 0;
@@ -1267,7 +1283,7 @@ h6 {
 }
 .testimonial02{
   margin-top: 169px;
-  margin-bottom: 70px;
+  margin-bottom: 40px;
 }
 .testiThumb{
   position: relative;
@@ -1334,11 +1350,11 @@ h6 {
 }
 .ctaSection04{
   position: relative;
-  padding: 0 0 120px;
+  padding: 0 0 100px;
   background: #01003B;
 }
 .ctaSection04 .bsbr{
-  margin-bottom: 190px;
+  margin-bottom: 150px;
 }
 .ctaprCon03{
   position: relative;
@@ -1351,8 +1367,8 @@ h6 {
   margin-bottom: 36px;
 }
 .ctaprCon03 p{
-  font-weight: 300;
-  font-size: 20px;
+  font-weight: 400;
+  font-size: 18px;
   line-height: 190%;
   color: #FFFFFF;
   margin: 0;
@@ -1367,7 +1383,6 @@ h6 {
 }
 .rowGapt06{
   margin-top: 180px;
-  margin-bottom: 60px;
 }
 .rowGapt06 .ctaprCon03{
   padding: 120px 5px 0 30px;
@@ -1399,7 +1414,7 @@ h6 {
   background-position: left top;
   position: relative;
   overflow: hidden;
-  padding: 140px 0 160px;
+  padding: 200px 0 157px;
 }
 .pr04heroSection .bannerContent02{
   position: relative;
@@ -1423,6 +1438,20 @@ h6 {
   left: -200px;
   top: -56px;
   mix-blend-mode: color-dodge;
+  opacity: .6;
+}
+.strBanerThumb04 .shape{
+  position: absolute;
+  left: -185px;
+  top: -140px;
+  mix-blend-mode: normal;
+  z-index: -1;
+  max-height: inherit;
+}
+.bnObtn{
+  position: absolute;
+  left: 133px;
+  top: 24px;
 }
 .pr04bannerBtn{
   position: relative;
@@ -1449,15 +1478,15 @@ h6 {
 }
 .ml185{
   margin-left: 185px;
-  margin-right: -130px;
+  margin-right: -156px;
 }
 .ctaSection05{
   position: relative;
-  padding: 0 0 120px;
+  padding: 0 0 100px;
   background: #01003B;
 }
 .ctaSection05 .bsbr{
-  margin-bottom: 190px;
+  margin-bottom: 150px;
 }
 .ctaprCon04{
   position: relative;
@@ -1470,8 +1499,8 @@ h6 {
   margin-bottom: 10px;
 }
 .ctaprCon04 p{
-  font-weight: 300;
-  font-size: 20px;
+  font-weight: 400;
+  font-size: 18px;
   line-height: 190%;
   color: #FFFFFF;
   margin: 0 50px 0 0;
@@ -1517,7 +1546,7 @@ h6 {
   margin-left: 88px;
 }
 .rowGapt08{
-  margin-bottom: 55px;
+  margin-bottom: 20px;
 }
 .pr04Layer01{
   position: absolute;
@@ -1529,4 +1558,714 @@ h6 {
   right: 0;
   top: 38%;
   text-align: right;
+}
+/*------------------- 10. About Page -------------------*/
+/*-- Page Banner --*/
+.pageBanner{
+  background-color: #01003b;
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: left top;
+  position: relative;
+  padding: 195px 0 278px;
+}
+.overlay{
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  text-align: center;
+}
+.overlay img{
+  max-width: 100%;
+  height: auto;
+}
+.pageBanner .container{
+  position: relative;
+  z-index: 2;
+}
+.pageBanner h2{
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 39px;
+  color: #FFFFFF;
+  margin: 0 0 16px;
+}
+.pageBanner p{
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 150%;
+  color: #FFFFFF;
+  margin: auto;
+  max-width: 840px;
+}
+
+/*-- Gallery --*/
+.imageGallSection{
+  position: relative;
+  overflow: hidden;
+  margin-top: -209px;
+  padding: 0 0 50px;
+}
+.imageGallSection::before{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  content: '';
+  width: 100%;
+  height: 53.55%;
+  background: #F9FAFC;
+}
+.imageGallSection .mt80{
+  margin-top: 80px;
+}
+.imageGallSection img{
+  max-width: 100%;
+  height: auto;
+  filter: drop-shadow(0px 8px 18px rgba(1, 0, 59, 0.1));
+  border-radius: 16px;
+  max-height: 320px;
+  object-fit: cover;
+}
+@media (min-width: 1300px){
+  .imageGallSection .container {
+    max-width: 1296px;
+  }
+}
+
+/*-- Team --*/
+.teamSection{
+  position: relative;
+  background: #F9FAFC;
+  padding: 55px 0 97px;
+}
+.subTitle{
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: var(--primay-color);
+  margin: 0 0 26px;
+}
+.secTitle02{
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 39px;
+  color: var(--body-color);
+  margin: 0 0 24px;
+}
+.secDesc{
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 180%;
+  margin: 0 5px 66px;
+}
+.teamItem{
+  position: relative;
+  background: #FFFFFF;
+  box-shadow: 0px 16px 44px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+  text-align: center;
+  padding: 40px 20px 44px;
+  margin: 0 9px 40px;
+}
+.teamItem img{
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+}
+.teamItem h5{
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #222222;
+  margin: 18px 0 1px;
+}
+.teamItem h5 a{
+  color: inherit;
+}
+.teamItem h5 a:hover{
+  color: var(--primay-color);
+}
+.teamItem p{
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 180%;
+  color: #8480C6;
+  margin: 0 0 19px;
+}
+.tmSocial{
+  position: relative;
+}
+.tmSocial a{
+  display: inline-block;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  text-align: center;
+  color: #fff;
+  background: rgba(132, 128, 198, 0.5);
+  line-height: 40px;
+  font-size: 21px;
+  margin: 0 6px;
+}
+.tmSocial a:hover{
+  background: var(--primay-color);
+}
+
+/*-- Call To Action --*/
+.ctaSection06{
+  position: relative;
+  padding: 124px 0 140px;
+}
+.ctaprCon06{
+  position: relative;
+  padding: 79px 93px 0 0;
+}
+.ctaprCon06 .secTitle02{
+  margin-bottom: 34px;
+}
+.ctaprCon06 p{
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 190%;
+  margin: 0;
+}
+.ctaprT06{
+  position: relative;
+  margin-left: -32px;
+}
+.ctaprT06 img{
+  max-width: 100%;
+  height: auto;
+  border-radius: 16px;
+}
+
+/*-- Careers Jobs --*/
+.careerSection{
+  position: relative;
+  background: #F9FAFC;
+  padding: 95px 0 128px;
+}
+.careerSection .secTitle02{
+  margin-bottom: 35px;
+}
+.careerSection .secDesc{
+  margin-bottom: 58px;
+}
+.jobItem{
+  position: relative;
+  background: #FFFFFF;
+  box-shadow: 0px 16px 44px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+  max-width: 800px;
+  margin: 0 auto 32px;
+  padding: 25px 220px 31px 33px;
+}
+.jobItem span{
+  display: block;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--primay-color);
+  margin-bottom: 12px;
+}
+.jobItem h5{
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  margin-bottom: 33px;
+}
+.jobItem h5 a{
+  color: inherit;
+}
+.jobItem h5 a:hover{
+  color: var(--primay-color);
+}
+.jobFeed{
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.jobFeed p{
+  display: inline-block;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 20px;
+  color: rgba(1, 0, 59, 0.3);
+  margin: 0 36px 0 0;
+}
+.jobFeed p:last-chld{
+  margin-right: 0;
+}
+.jobFeed p svg{
+  width: 16px;
+  height: 15px;
+  position: relative;
+  top: -2px;
+  margin-right: 2px;
+  fill: #e1e3e6;
+}
+.jobFeed p:first-child svg{
+  top: -1px;
+}
+.applyBtn{
+  position: absolute;
+  right: 40px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  height: 34px;
+  width: 95px;
+  background: var(--primay-color);
+  color: #fff;
+  border-radius: 4px;
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: capitalize;
+  text-align: center;
+  display: inline-block;
+  line-height: 32px;
+}
+.applyBtn svg{
+  width: 19px;
+  height: 18px;
+  margin-left: 4px;
+  transition: all ease 0.4s;
+}
+.applyBtn svg.mobile{
+  display: none;
+}
+.applyBtn:hover{
+  color: #fff;
+}
+
+/*------------------- 11. Pricing Page -------------------*/
+.prBanner.pageBanner p{
+  max-width: 860px;
+}
+.pricingSection{
+  position: relative;
+  background: #F9FAFC;
+  padding: 0 0 180px;
+}
+.pricinWrapper{
+  position: relative;
+  margin-top: -218px;
+}
+.toggle-pricing{
+    position: relative;
+    margin: 0 0 56px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+.toggle-pricing li{
+    list-style: none;
+    display: inline-block;
+}
+.toggle-pricing li a{
+    display: inline-block;
+    font-size: 18px;
+    line-height: 160%;
+    color: #fff;
+    font-weight: 400;
+}
+.toggle-pricing li a span{
+  font-size: 16px;
+  display: inline-block;
+  background: linear-gradient(264.33deg, #5DD5F4 -67.65%, #4268F5 147.15%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  margin-left: 7px;
+}
+.toggle-pricing .switch {
+    position: relative;
+    display: inline-block;
+    width: 53px;
+    height: 25px;
+    vertical-align: middle;
+    margin: 0 14px;
+    border-radius: 34px;
+}
+.toggle-pricing .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(263.56deg, #5DD5F4 -37%, #2350F5 56.79%, #FF69FE 148.65%);
+    border-radius: 34px;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+.toggle-pricing .slider:before {
+    position: absolute;
+    content: "";
+    height: 21px;
+    width: 21px;
+    left: 0;
+    bottom: 2px;
+    -webkit-transform: translateX(3px);
+    transform: translateX(3px);
+    background: #FFFFFF;
+    box-shadow: 0px 1px 1px rgba(100, 116, 139, 0.06), 0px 1px 2px rgba(100, 116, 139, 0.1);
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 30px;
+}
+.toggle-pricing .switch.off .slider:before {
+    -webkit-transform: translateX(30px);
+    transform: translateX(30px);
+}
+.pricingTable{
+  position: relative;
+  background: #FFFFFF;
+  padding: 32px 32px 36px;
+  box-shadow: 0px 9px 15px rgba(100, 116, 139, 0.12);
+  border-radius: 16px;
+}
+.pricingTable > img{
+  height: 20px;
+}
+.pricingTable h3{
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 137.5%;
+  color: #111827;
+  margin: 19px 0 4px;
+}
+.pricingTable h5{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 137.5%;
+  color: #9CA3AF;
+  margin: 0 0 19px;
+}
+.prPrice{
+  position: relative;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 137.5%;
+  color: #111827;
+  min-height: 49px;
+  margin: 0 0 1px;
+}
+.prPrice h2{
+  margin: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+  color: inherit;
+}
+.pricingTable p{
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 137.5%;
+  color: #9CA3AF;
+  margin: 0 0 20px;
+}
+.prBtn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 48px;
+  width: calc(100% + 16px);
+  margin-left: -8px;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 46px;
+  padding: 1px;
+  background: linear-gradient(263.56deg, #5DD5F4 -37%, #2350F5 56.79%, #FF69FE 148.65%);
+}
+.prBtn span{
+  transition: all 0.4s ease;
+  background: transparent;
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 0 22px;
+  border-radius: 8px;
+}
+.prBtn:hover{
+  color: #fff;
+}
+.prBtn.active span{
+  background: #fff;
+}
+.prBtn.active{
+  color: #01003B;
+}
+.pricingTable > span{
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 137.5%;
+  color: #9CA3AF;
+  display: block;
+  margin: 28px 0 17px;
+}
+.pricingTable ul{
+  margin: 0;
+  padding: 0;
+}
+.pricingTable ul li{
+  list-style: none;
+  display: block;
+  padding-left: 36px;
+  position: relative;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 150%;
+  color: #111827;
+  margin: 0 0 9px;
+}
+.pricingTable ul li:before{
+  position: absolute;
+  left: 0;
+  top: 5px;
+  content: '';
+  width: 18px;
+  height: 12px;
+  background: url(../images/list.png) no-repeat center center / cover;
+}
+.pricingTable ul li.disbale{
+  color: #D1D5DB;
+}
+.pricingTable ul li.disbale:before{
+  background: url(../images/list_disable.png) no-repeat center center / cover;
+}
+.prRow{
+  margin-left: 33px;
+  margin-right: 33px;
+}
+.prRow .col-lg-4{
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.prAction{
+  position: relative;
+  text-align: center;
+  color: #6B7280;
+  font-size: 16px;
+  line-height: 150%;
+  max-width: 830px;
+  margin: 65px auto 0;
+}
+.prAction a{
+  color: var(--primay-color);
+  text-decoration-line: underline;
+}
+
+
+/*------------------- 12. Contact Page -------------------*/
+.contactSection{
+  position: relative;
+  background: #01003B;
+  padding: 0 0 150px;
+}
+.contactForm{
+  position: relative;
+  background: #FFFFFF;
+  box-shadow: 0px 0px 44px rgba(0, 0, 0, 0.05);
+  border-radius: 24px;
+  max-width: 496px;
+  margin: 0 auto;
+  padding: 27px 32px 36px;
+  margin-top: -214px;
+  z-index: 2;
+}
+.contactForm label{
+  display: block;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: #677487;
+  margin: 0 0 11px;
+}
+.contactForm label span{
+  display: inline-block;
+  float: right;
+  color: #BDBDBD;
+  font-size: 12px;
+}
+.contactForm input:not([type="submit"]):not([type="radio"]):not([type="checkbox"]),
+.contactForm textarea{
+    font-size: 13px;
+    font-weight: 600;
+    color: #BDBDBD;
+    width: 100%;
+    height: 56px;
+    background: #FFFFFF;
+    border: 1px solid #E2E2E2;
+    border-radius: 8px;
+    margin: 0 0 24px;
+    padding: 0 17px;
+}
+.contactForm textarea{
+    height: 120px;
+    padding-top: 14px;
+    resize: none;
+    margin-bottom: 29px;
+}
+.contactForm input::placeholder,
+.contactForm textarea::placeholder{
+    opacity: 1;
+    color: #BDBDBD;
+}
+.contactForm input::-moz-placeholder,
+.contactForm textarea::-moz-placeholder{
+    opacity: 1;
+    color: #BDBDBD;
+}
+.contactForm input::-webkit-placeholder,
+.contactForm textarea::-webkit-placeholder{
+    opacity: 1;
+    color: #BDBDBD;
+}
+.conBtnWrapper{
+  display: flex;
+  align-items: center;
+/*  margin-left: 8px;*/
+}
+.contactForm button{
+  display: inline-block;
+  text-align: center;
+  height: 48px;
+  min-width: 120px;
+  border: none;
+  outline: none;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 46px;
+  padding: 0 10px;
+  overflow: hidden;
+  background: linear-gradient(263.56deg, #5DD5F4 -37%, #2350F5 56.79%, #FF69FE 148.65%);
+  position: relative;
+  z-index: 2;
+}
+/*.contactForm button:after{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  content: '';
+  visibility: hidden;
+  opacity: 0;
+  z-index: -1;
+  background: var(--primay-color);
+  transition: all ease 0.4s;
+}
+.contactForm button:hover:after{
+  visibility: visible;
+  opacity: 1;
+}*/
+.contactForm button:hover{
+  color: #fff;
+}
+.conBtnWrapper p{
+  text-align: right;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 140%;
+  text-align: right;
+  color: #677487;
+  margin: 0 0 0 20px;
+}
+.conMsg.pageBanner p{
+  max-width: 670px;
+}
+.contactMsgSection{
+  position: relative;
+  background: #01003B;
+  padding: 0 0 400px;
+}
+.contactMsg{
+  position: relative;
+  text-align: center;
+  max-width: 640px;
+  margin: auto;
+  margin-top: -200px;
+}
+.contactMsg img{
+  max-width: 100%;
+  height: auto;
+}
+.contactMsg p{
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 150%;
+  color: #FFFFFF;
+  margin: 100px 0 0;
+}
+.contactMsg p a{
+  text-decoration-line: underline;
+  background: linear-gradient(264.33deg, #5DD5F4 -67.65%, #4268F5 147.15%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+.contentBanner{
+  padding-bottom: 80px;
+}
+.contentSection{
+  position: relative;
+  background: #F9FAFC;
+  padding: 70px 0 500px;
+}
+.contentSection h3{
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 34px;
+  margin: 0 0 23px;
+}
+.contentSection p{
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 170%;
+  margin: 0 0 39px;
+}
+.contentSection p a{
+  text-decoration-line: underline;
+  background: linear-gradient(264.33deg, #5DD5F4 -67.65%, #4268F5 147.15%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+.contentSection ol{
+  margin: 0;
+  padding: 0 0 38px;
+  list-style: decimal;
+  list-style-position: inside;
+}
+.contentSection ol li{
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 170%;
+  margin: 0 0 1px;
+}
+.contentSection ul{
+  margin: 0;
+  padding: 0;
+  list-style: disc;
+  list-style-position: inside;
+}
+.contentSection ul li{
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 170%;
+  margin: 0 0 1px;
 }
