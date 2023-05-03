@@ -14,9 +14,8 @@
 ===================================
     01. Testimonial Silder
     02. Strech Column
-    03. 
-    04. 
-    05. 
+    03. Mobile Menu
+    04. Toggle Pricing
 */
 
 (function ($) {
@@ -81,37 +80,46 @@
         $(".mobile_menu").removeClass("open");
         $("body").removeClass("scrollHide");
     });
-    /*-- 04. Strech Column --*/
-    tj_stretch();
-    function tj_stretch() {
-        var i = $(window).width();
-        $(".row .tj-stretch-element-inside-column").each(function() {
-            var $this = $(this),
-                row = $this.closest(".row"),
-                cols = $this.closest('[class^="col-"]'),
-                colsheight = $this.closest('[class^="col-"]').height(),
-                rect = this.getBoundingClientRect(),
-                l = row[0].getBoundingClientRect(),
-                s = cols[0].getBoundingClientRect(),
-                r = rect.left,
-                d = i - rect.right,
-                c = l.left + (parseFloat(row.css("padding-left")) || 0),
-                u = i - l.right + (parseFloat(row.css("padding-right")) || 0),
-                p = s.left,
-                f = i - s.right,
-                styles = {
-                    "margin-left": 0,
-                    "margin-right": 0
-                };
-            if (Math.round(c) === Math.round(p)) {
-                var h = parseFloat($this.css("margin-left") || 0);
-                styles["margin-left"] = h - r;
+    /*--------------------------------------------------------
+    / 4. Toggle Pricing
+    /----------------------------------------------------------*/
+    if ($('#switch-toggle-tab').length) {
+        var toggleSwitch = $('#switch-toggle-tab label.switch');
+        var TabTitle = $('#switch-toggle-tab li');
+        var monthTabTitle = $('#switch-toggle-tab li.month');
+        var yearTabTitle = $('#switch-toggle-tab li.year');
+        var monthTabContent = $('.prPrice .month');
+        var yearTabContent = $('.prPrice .year');
+        // hidden show deafult;
+        monthTabContent.fadeIn();
+        yearTabContent.fadeOut();
+
+        function toggleHandle() {
+            if (toggleSwitch.hasClass('on')) {
+                yearTabContent.fadeOut();
+                monthTabContent.fadeIn();
+                monthTabTitle.addClass('active');
+                yearTabTitle.removeClass('active');
+            } else {
+                monthTabContent.fadeOut();
+                yearTabContent.fadeIn();
+                yearTabTitle.addClass('active');
+                monthTabTitle.removeClass('active');
             }
-            if (Math.round(u) === Math.round(f)) {
-                var w = parseFloat($this.css("margin-right") || 0);
-                styles["margin-right"] = w - d;
-            }
-            $this.css(styles);
+        };
+        monthTabTitle.on('click', function () {
+            toggleSwitch.addClass('on').removeClass('off');
+            toggleHandle();
+            return false;
+        });
+        yearTabTitle.on('click', function () {
+            toggleSwitch.addClass('off').removeClass('on');
+            toggleHandle();
+            return false;
+        });
+        toggleSwitch.on('click', function () {
+            toggleSwitch.toggleClass('on off');
+            toggleHandle();
         });
     }
     
