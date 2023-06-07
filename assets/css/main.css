@@ -825,6 +825,27 @@ h6 {
   height: auto;
 }
 
+.fImage15{
+  position: relative;
+  text-align: center;
+  margin-right: -7px;
+}
+.fImage15 img{
+  max-width: 70%;
+  height: auto;
+}
+.flCon15{
+  margin: 0 0 0 0;
+  padding-top: 16px;
+}
+.flCon15 h4{
+  margin-right: -130px;
+  margin-bottom: 14px;
+}
+.flCon15 h5{
+  margin-bottom: 30px;
+}
+
 /*-- Testimonial --*/
 .testimonialSection{
   position: relative;
