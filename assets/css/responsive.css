@@ -1695,6 +1695,7 @@
 	.rowGapt01 .ctaprT01 {
 		padding: 0;
 		margin-right: 0;
+		margin-top: 40px;
 	}
 	.rowGapt01 {
 		margin-top: 40px;
@@ -1710,6 +1711,7 @@
 	.rowGapt02 .ctaprT01 {
 		padding: 0 0 0 0;
 		margin: 0;
+		margin-top: 40px;
 	}
 	.rowGapt02 .ctaprT01 img {
 		max-width: 100%;
